@@ -2,7 +2,7 @@
 # encoding: utf-8
 
 """
-Link Feed Generator for Pelican.
+JSON Feed Generator for Pelican.
 """
 
 from __future__ import unicode_literals
