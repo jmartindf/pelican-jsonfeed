@@ -92,6 +92,9 @@ class JSONFeed(SyndicationFeed):
 		self.items.append(item)
 
 	def write(self, outfile, encoding):
+		def to_unicode(s):
+			return force_text(s, strings_only=True)
+
 		handler = OrderedDict()
 		json_items = []
 
